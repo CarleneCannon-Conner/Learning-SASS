@@ -1,5 +1,19 @@
 $main-font : "Verdana";
+$image_width: "100px";
 
 h1 {
   font-family: $main-font;
 }
+
+.image {
+  $width: 6 / 12 * 100%;
+  width: $width - 4%;
+  float:right;
+  margin:2%;
+}
+
+#flower_img {
+  width:100%;
+}
+
+

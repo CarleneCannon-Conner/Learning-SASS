@@ -1,4 +1,12 @@
 h1 {
   font-family: "Verdana"; }
 
+.image {
+  width: 46%;
+  float: right;
+  margin: 2%; }
+
+#flower_img {
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */
