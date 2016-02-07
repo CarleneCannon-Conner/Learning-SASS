@@ -57,7 +57,11 @@ nav.main a:hover {
   #container {
     width: 62.66667%; } }
 body {
-  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
+  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
+  background-color: #292c44; }
+
+#container {
+  background-color: aliceblue; }
 
 h1 {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
