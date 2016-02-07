@@ -46,9 +46,16 @@ nav.main a:hover {
           border-radius: 0;
           margin: 0;
           font-size: .8em;
-          padding: .7em .9em; } }
+          padding: .7em .9em; }
+
+  #container {
+    width: 79.33333%;
+    padding: 2%;
+    margin: auto; } }
 @media only screen and (min-width: 960px) {
-  /* Desktop CSS */ }
+  /* Desktop CSS */
+  #container {
+    width: 62.66667%; } }
 body {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
 
@@ -58,7 +65,7 @@ h1 {
 .main_image {
   width: 46%;
   float: right;
-  margin: 1%;
+  margin: 2%;
   padding: 1%;
   border: 1.5px solid grey;
   -webkit-border-radius: 10px;
