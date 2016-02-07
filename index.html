@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
-    <link rel="stylesheet" type="text/css" href="Stylesheets\main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Stylesheets/main.css">
     <title>Learning Sass</title>
 </head>
 
@@ -11,30 +11,31 @@
 <div id="wrapper">
     <div id="container">
         <header>
-            <hgroup>
                 <h1>Learning SASS</h1>
                 <h2>Building a HTML5 template with SASS</h2>
-            </hgroup>
         </header>
 
-        <nav>
+        <nav class="main">
             <ul>
                 <li><a href="#subject1">Setting Up SASS</a></li>
                 <li><a href="#subject2">Initial Project</a></li>
                 <li><a href="#subject3">Partials and Imports</a></li>
                 <li><a href="#subject4">Variables</a></li>
-                <li><a href="#subject4">Nesting</a></li>
-                <li><a href="#subject5">Mixins</a></li>
-                <li><a href="#subject6">Extend or Inheritance</a></li>
-                <li><a href="#subject7">Maths Opperators</a></li>
+                <li><a href="#subject5">Nesting</a></li>
+                <li><a href="#subject6">Mixins</a></li>
+                <li><a href="#subject7">Extend or Inheritance</a></li>
+                <li><a href="#subject8">Maths Opperators</a></li>
             </ul>
+            <div class ="clear"></div>
         </nav>
 
         <div id="content">
-            <div class="image">
-                <img src="http://www.torange.us/photo/32/13/a-beautiful-picture-on-the-desktop-1410765858_21.jpg" alt="A flower image" id="flower_img">
+            <div class="main_image">
+                <img src="http://www.torange.us/photo/32/13/a-beautiful-picture-on-the-desktop-1410765858_21.jpg"
+                     alt="A flower image" id="flower_img">
                 <div class="image caption">Labeled for reuse image from
-                    <a href="http://www.torange.us/Backgrounds-textures/wallpapers/a-beautiful-picture-on-the-desktop-32838.html" target="_blank">
+                    <a href="http://www.torange.us/Backgrounds-textures/wallpapers/a-beautiful-picture-on-the-desktop
+                    -32838.html" target="_blank">
                         www.torange.us</a>
                 </div>
             </div>
@@ -43,7 +44,7 @@
                 <h3>Setting Up SASS From the Command Line</h3>
                 <p>
                     In order to install SASS, I first needed to download and install
-                    <a href="http://rubyinstaller.org/" target="_blank">Ruby</a>. <br />
+                    <a href="http://rubyinstaller.org/" target="_blank">Ruby</a>.<br />
                     I was then able to install SASS from the Command Line with:
                     <code>gem install sass</code>
                 </p>
@@ -57,12 +58,12 @@
                         WebStorm IDE</a>, I created a new empty project. Added this index.html page, a folder for
                     Stylesheets and in it a main.scss.<br />
                     <br />
-                    From the command line I am able to run the preprocessor manually on individual .scss files to convert
-                    them into usable .css files. Or I can choose to watch one or more files or folders containing .scss
-                    files. This would automatically pre-process valid .scss files whenever a change has been made.<br />
-                    <br />
-                    However, once SASS has been installed, there is a handy feature in WebStorm that automatically detects
-                    .scss files and asks if you would like them watched.
+                    From the command line I am able to run the preprocessor manually on individual .scss files to
+                    convert them into usable .css files. Or I can choose to watch one or more files or folders
+                    containing .scss files. This would automatically pre-process valid .scss files whenever a change
+                    has been made.<br /><br />
+                    However, once SASS has been installed, there is a handy feature in WebStorm that automatically
+                    detects .scss files and asks if you would like them watched.
                 </p>
             </div>
 
@@ -71,17 +72,17 @@
                 <p>
                     I created a main.scss. This is where most of the default rules will be specified. I have created 3
                     partials because this site may be viewed on various devices. One specifies the rules to be applied
-                    when viewing this site on a phone, one for a tablet and one for a desktop. In the main.scss I import
-                    each of these partials in turn, surrounding them in conditional statements so they are only applied
-                    when needed e.g.
-                    <pre>
-                        <code>
-                            @media only screen and (min-width: 600px) {
-                                @import "tablet";
-                            }
-                        </code>
-                    </pre>
+                    when viewing this site on a phone, one for a tablet and one for a desktop. In the main.scss I
+                    import each of these partials in turn, surrounding them in conditional statements so they are only
+                    applied when needed e.g.
                 </p>
+                <pre>
+                    <code>
+                        @media only screen and (min-width: 600px) {
+                            @import "tablet";
+                        }
+                    </code>
+                </pre>
             </div>
 
             <div id="subject4">
@@ -89,63 +90,95 @@
                 <p>
                     The use of variables allows for increased maintainability. A value that I may use more than once in
                     a typical CSS document now, only needs to be defined once. e.g.
-                    <pre>
+
+                </p>
+                <pre>
                     <code>
                         $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
                     </code>
-                    </pre>
-                </p>
+                </pre>
             </div>
 
             <div id="subject5">
                 <h3>Nesting</h3>
                 <p>
                     With nesting there is no need to repeat element names, that apply to more than one thing.
-                    <pre>
-                        <code>
-                            nav {
-                                background: $alt1-colour;
+                </p>
+                <pre>
+                    <code>
+                        nav {
+                            background: $alt1-colour;
 
-                                ul li {
-                                    list-style-type: none;
-                                    width: 50%;
-                                    float: left;
-                                }
-
-                                a {
-                                    display:block;
-                                    background:$alt2-colour;
-                                }
-                                a:hover {
-                                    color:white;
-                                }
-                            }
-                        </code>
-                    </pre>
-                    The SCSS code above generates the following CSS, Note 'nav' has been included where it is needed:
-                    <pre>
-                        <code>
-                            nav {
-                                background: #18cdca;
-                            }
-
-                            nav ul li {
+                            ul li {
                                 list-style-type: none;
                                 width: 50%;
                                 float: left;
                             }
 
-                            nav a {
-                                display: block;
-                                background: #4f80e1;
+                            a {
+                                display:block;
+                                background:$alt2-colour;
                             }
-                            nav a:hover {
-                                color: white;
+                            a:hover {
+                                color:white;
                             }
-                        </code>
-                    </pre>
+                        }
+                    </code>
+                </pre>
+                <p>
+                    The SCSS code above generates the following CSS, Note 'nav' has been included where it is needed:
                 </p>
+                <pre>
+                    <code>
+                        nav {
+                            background: #18cdca;
+                        }
+
+                        nav ul li {
+                            list-style-type: none;
+                            width: 50%;
+                            float: left;
+                        }
+
+                        nav a {
+                            display: block;
+                            background: #4f80e1;
+                        }
+                        nav a:hover {
+                            color: white;
+                        }
+                    </code>
+                </pre>
             </div>
+
+            <div id="subject6">
+                <h3>Mixins</h3>
+                <p>
+                    Mixins are similar to functions in that, you are abe to pass in values.
+                </p>
+                <pre>
+                    <code>
+                        @mixin border-radius ($radius) {
+                            -webkit-border-radius: $radius;
+                            -moz-border-radius: $radius;
+                            -ms-border-radius: $radius;
+                            border-radius: $radius;
+                        }
+                    </code>
+                </pre>
+                <p>
+                  The above mixin could be called with:
+                </p>
+                <pre>
+                    <code>
+                        .main_image {
+                            border:1.5px solid grey;
+                            @include border-radius(10px);
+                        }
+                    </code>
+                </pre>
+            </div>
+
 
         </div>
 

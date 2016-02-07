@@ -1,1 +1,28 @@
 /* Phone CSS */
+nav.main {
+
+  ul {
+    padding: 0;
+    margin:0;
+
+    li {
+      list-style-type: none;
+      width: 50%;
+      float: left;
+    }
+  }
+
+  a {
+    display:block;
+    border:1px solid rgba(0,0,0,0.5);
+    margin:.1em 2%;
+    padding:.4em;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+
+  a:hover {
+    color:white;
+  }
+}

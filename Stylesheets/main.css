@@ -1,43 +1,75 @@
+/* Variables */
+/* Mixins */
+nav.main {
+  background: #18cdca; }
+  nav.main ul li a {
+    background: #4f80e1; }
+
 /* Import partials: different rules depending on screen size */
 /* Phone CSS */
+nav.main ul {
+  padding: 0;
+  margin: 0; }
+  nav.main ul li {
+    list-style-type: none;
+    width: 50%;
+    float: left; }
+nav.main a {
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: .1em 2%;
+  padding: .4em;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px; }
+nav.main a:hover {
+  color: white; }
+
 @media only screen and (min-width: 600px) {
-  /* Tablet CSS */ }
+  /* Tablet CSS */
+  nav.main {
+    float: none;
+    width: 100%;
+    border: none;
+    background: #4f80e1; }
+    nav.main ul {
+      border: none;
+      margin-left: 2%; }
+      nav.main ul li {
+        list-style-type: none;
+        width: auto;
+        float: left;
+        border-right: solid 1px rgba(0, 0, 0, 0.7);
+        border-left: solid 1px rgba(255, 255, 255, 0.1); }
+        nav.main ul li a {
+          border: none;
+          border-radius: 0;
+          margin: 0;
+          font-size: .8em;
+          padding: .7em .9em; } }
 @media only screen and (min-width: 960px) {
   /* Desktop CSS */ }
-/* Variables */
 body {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
-
-#content {
-  width: 100%;
-  float: left; }
 
 h1 {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
 
-.image {
+.main_image {
   width: 46%;
   float: right;
-  margin: 2%; }
+  margin: 1%;
+  padding: 1%;
+  border: 1.5px solid grey;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
 
 #flower_img {
   width: 100%; }
 
-nav {
-  background: #18cdca;
-  width: 100%;
-  float: left; }
-  nav ul {
-    padding: 0px;
-    margin: 0px; }
-    nav ul li {
-      list-style-type: none;
-      width: 50%;
-      float: left; }
-  nav a {
-    display: block;
-    background: #4f80e1; }
-  nav a:hover {
-    color: white; }
+.clear {
+  clear: both; }
 
 /*# sourceMappingURL=main.css.map */

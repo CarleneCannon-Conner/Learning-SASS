@@ -1,1 +1,29 @@
 /* Tablet CSS */
+
+nav.main {
+  float: none;
+  width:100%;
+  border:none;
+  background: $alt2-colour;
+
+  ul {
+    border: none;
+    margin-left: 2%;
+
+    li {
+      list-style-type: none;
+      width: auto;
+      float: left;
+      border-right: solid 1px rgba(0, 0, 0, 0.7);
+      border-left: solid 1px rgba(255, 255, 255, 0.1);
+
+      a {
+        border: none;
+        border-radius: 0;
+        margin: 0;
+        font-size: .8em;
+        padding: .7em .9em;
+      }
+    }
+  }
+}
