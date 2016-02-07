@@ -21,6 +21,12 @@
             <ul>
                 <li><a href="#subject1">Setting Up SASS</a></li>
                 <li><a href="#subject2">Initial Project</a></li>
+                <li><a href="#subject3">Partials and Imports</a></li>
+                <li><a href="#subject4">Variables</a></li>
+                <li><a href="#subject4">Nesting</a></li>
+                <li><a href="#subject5">Mixins</a></li>
+                <li><a href="#subject6">Extend or Inheritance</a></li>
+                <li><a href="#subject7">Maths Opperators</a></li>
             </ul>
         </nav>
 
@@ -32,28 +38,14 @@
                         www.torange.us</a>
                 </div>
             </div>
-            <div id="topics">
-                <p>
-                    Working Progress ... <br />
-                    Topics I am likely to cover:
-                </p>
-                <ol>
-                    <li>Partials and Imports</li>
-                    <li>Variables</li>
-                    <li>Nesting</li>
-                    <li>Mixins</li>
-                    <li>Extend or inheritance</li>
-                    <li>Maths opperators</li>
-                </ol>
-            </div>
 
             <div id="subject1">
                 <h3>Setting Up SASS From the Command Line</h3>
                 <p>
                     In order to install SASS, I first needed to download and install
                     <a href="http://rubyinstaller.org/" target="_blank">Ruby</a>. <br />
-                    I was then able to install SASS from the Command Line with: <br />
-                    <em>gem install sass</em>
+                    I was then able to install SASS from the Command Line with:
+                    <code>gem install sass</code>
                 </p>
             </div>
 
@@ -71,6 +63,87 @@
                     <br />
                     However, once SASS has been installed, there is a handy feature in WebStorm that automatically detects
                     .scss files and asks if you would like them watched.
+                </p>
+            </div>
+
+            <div id="subject3">
+                <h3>Partials and Imports</h3>
+                <p>
+                    I created a main.scss. This is where most of the default rules will be specified. I have created 3
+                    partials because this site may be viewed on various devices. One specifies the rules to be applied
+                    when viewing this site on a phone, one for a tablet and one for a desktop. In the main.scss I import
+                    each of these partials in turn, surrounding them in conditional statements so they are only applied
+                    when needed e.g.
+                    <pre>
+                        <code>
+                            @media only screen and (min-width: 600px) {
+                                @import "tablet";
+                            }
+                        </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div id="subject4">
+                <h3>Variables</h3>
+                <p>
+                    The use of variables allows for increased maintainability. A value that I may use more than once in
+                    a typical CSS document now, only needs to be defined once. e.g.
+                    <pre>
+                    <code>
+                        $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
+                    </code>
+                    </pre>
+                </p>
+            </div>
+
+            <div id="subject5">
+                <h3>Nesting</h3>
+                <p>
+                    With nesting there is no need to repeat element names, that apply to more than one thing.
+                    <pre>
+                        <code>
+                            nav {
+                                background: $alt1-colour;
+
+                                ul li {
+                                    list-style-type: none;
+                                    width: 50%;
+                                    float: left;
+                                }
+
+                                a {
+                                    display:block;
+                                    background:$alt2-colour;
+                                }
+                                a:hover {
+                                    color:white;
+                                }
+                            }
+                        </code>
+                    </pre>
+                    The SCSS code above generates the following CSS, Note 'nav' has been included where it is needed:
+                    <pre>
+                        <code>
+                            nav {
+                                background: #18cdca;
+                            }
+
+                            nav ul li {
+                                list-style-type: none;
+                                width: 50%;
+                                float: left;
+                            }
+
+                            nav a {
+                                display: block;
+                                background: #4f80e1;
+                            }
+                            nav a:hover {
+                                color: white;
+                            }
+                        </code>
+                    </pre>
                 </p>
             </div>
 

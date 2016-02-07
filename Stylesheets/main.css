@@ -1,5 +1,19 @@
+/* Import partials: different rules depending on screen size */
+/* Phone CSS */
+@media only screen and (min-width: 600px) {
+  /* Tablet CSS */ }
+@media only screen and (min-width: 960px) {
+  /* Desktop CSS */ }
+/* Variables */
+body {
+  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
+
+#content {
+  width: 100%;
+  float: left; }
+
 h1 {
-  font-family: "Verdana"; }
+  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
 
 .image {
   width: 46%;
@@ -8,5 +22,22 @@ h1 {
 
 #flower_img {
   width: 100%; }
+
+nav {
+  background: #18cdca;
+  width: 100%;
+  float: left; }
+  nav ul {
+    padding: 0px;
+    margin: 0px; }
+    nav ul li {
+      list-style-type: none;
+      width: 50%;
+      float: left; }
+  nav a {
+    display: block;
+    background: #4f80e1; }
+  nav a:hover {
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */

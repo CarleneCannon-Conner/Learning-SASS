@@ -1,8 +1,37 @@
-$main-font : "Verdana";
+/* Import partials: different rules depending on screen size */
+@import "phone";
+
+@media only screen and (min-width: 600px) {
+  @import "tablet";
+}
+
+@media only screen and (min-width: 960px) {
+  @import "desktop";
+}
+
+/* Variables */
+$main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
+$main-colour: #292c44;
+$accent-colour: #ff5349;
+$alt1-colour: #18cdca;
+$alt2-colour: #4f80e1;
+
+
+
 $image_width: "100px";
+
+body {
+  font-family: $main-font;
+}
+
+#content {
+  width:100%;
+  float:left;
+}
 
 h1 {
   font-family: $main-font;
+
 }
 
 .image {
@@ -16,4 +45,27 @@ h1 {
   width:100%;
 }
 
+nav {
+  background: $alt1-colour;
+  width:100%;
+  float:left;
 
+  ul {
+    padding: 0px;
+    margin:0px;
+
+    li {
+      list-style-type: none;
+      width: 50%;
+      float: left;
+    }
+  }
+
+  a {
+    display:block;
+    background:$alt2-colour;
+  }
+  a:hover {
+    color:white;
+  }
+}
