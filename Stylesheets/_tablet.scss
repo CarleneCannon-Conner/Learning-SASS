@@ -34,3 +34,9 @@ nav.main {
   padding: 2%;
   margin:auto;
 }
+
+.main_image {
+  $width: 6 / 12 * 100%;
+  width: $width - 4%;
+  float:right;
+}

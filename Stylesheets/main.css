@@ -25,6 +25,9 @@ nav.main a {
 nav.main a:hover {
   color: white; }
 
+.main_image {
+  margin: 2px; }
+
 @media only screen and (min-width: 600px) {
   /* Tablet CSS */
   nav.main {
@@ -51,11 +54,18 @@ nav.main a:hover {
   #container {
     width: 79.33333%;
     padding: 2%;
-    margin: auto; } }
+    margin: auto; }
+
+  .main_image {
+    width: 46%;
+    float: right; } }
 @media only screen and (min-width: 960px) {
   /* Desktop CSS */
   #container {
-    width: 62.66667%; } }
+    width: 62.66667%; }
+
+  .main_image {
+    width: 29.33333%; } }
 body {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
   background-color: #292c44; }
@@ -67,9 +77,6 @@ h1 {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
 
 .main_image {
-  width: 46%;
-  float: right;
-  margin: 2%;
   padding: 1%;
   border: 1.5px solid grey;
   -webkit-border-radius: 10px;
