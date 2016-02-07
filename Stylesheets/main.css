@@ -71,7 +71,11 @@ body {
   background-color: #292c44; }
 
 #container {
-  background-color: aliceblue; }
+  background-color: aliceblue;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
 
 h1 {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }

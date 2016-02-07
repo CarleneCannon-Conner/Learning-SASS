@@ -39,6 +39,7 @@ body {
 
 #container {
   background-color: aliceblue;
+  @include border-radius(10px);
 }
 
 
