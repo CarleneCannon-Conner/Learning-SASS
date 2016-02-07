@@ -2,8 +2,8 @@
 $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
 $main-colour: #292c44;
 $accent-colour: #ff5349;
-$alt1-colour: #18cdca;
-$alt2-colour: #4f80e1;
+$alt1-colour: #151515;
+$alt2-colour: #b7c6e1;
 $image_width: "100px";
 
 /* Mixins */
@@ -15,9 +15,9 @@ $image_width: "100px";
 }
 
 nav.main {
-  background: $alt1-colour;
+  background:$alt1-colour;
   ul li a {
-    background:$alt2-colour;
+    color: $alt2-colour;
   }
 }
 
@@ -35,11 +35,11 @@ nav.main {
 body {
   font-family: $main-font;
   background-color: $main-colour;
+  margin:0;
 }
 
 #container {
   background-color: aliceblue;
-  @include border-radius(10px);
 }
 
 
@@ -52,7 +52,7 @@ h1 {
 .main_image {
   padding:1%;
   border:1.5px solid grey;
-  @include border-radius(10px);
+  @include border-radius(3px);
 }
 
 #flower_img {
