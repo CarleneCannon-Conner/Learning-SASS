@@ -1,12 +1,5 @@
 /* Variables */
 /* Mixins */
-nav.main {
-  background: #151515; }
-  nav.main ul li a {
-    color: #9ca7be; }
-  nav.main ul li a:hover {
-    color: #F0E704; }
-
 body {
   font-family: "Raleway", sans-serif;
   background-color: #292c44;
@@ -20,17 +13,26 @@ body {
   border-radius: 3px;
   margin: 2% auto 2% auto; }
 
-h1 {
-  font-family: "Raleway", sans-serif; }
+nav.main {
+  background: #151515; }
+  nav.main ul li a {
+    color: #9ca7be; }
+  nav.main ul li a:hover {
+    color: #F0E704; }
 
 .main_image {
   padding: 1%;
-  border: 1.5px solid #9ca7be;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
   margin: 10px 2px 2px 2px; }
+
+img {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
 
 .image_caption {
   font-size: 0.8em; }
@@ -52,7 +54,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
-  background-color: white;
+  background-color: aliceblue;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -60,15 +62,20 @@ pre {
   padding-right: 1em; }
 
 a:hover {
-  color: #0072BC; }
+  color: #9ca7be; }
 
 .nav_link_section, .nav_link_top {
-  font-size: .7em;
+  font-size: 0.8em;
   margin: 2px;
   text-decoration: none; }
 
 .nav_link_top {
   font-weight: 600; }
+
+footer {
+  margin-top: 100px;
+  font-size: 0.8em;
+  text-align: center; }
 
 /* Import partials: different rules depending on screen size */
 /* Phone CSS */
@@ -95,14 +102,12 @@ nav.main a {
   nav.main {
     float: left;
     width: 14.66667%;
-    border: none;
     margin-right: 2%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
     border-radius: 3px; }
     nav.main ul {
-      border: none;
       margin-left: 2%; }
       nav.main ul li {
         list-style-type: none;
@@ -128,8 +133,7 @@ nav.main a {
   /* Desktop CSS */
   nav.main {
     float: none;
-    width: 100%;
-    border: none; }
+    width: 100%; }
 
   #content {
     width: 54.33333%;

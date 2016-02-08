@@ -3,12 +3,10 @@
 nav.main {
   float: left;
   width: (2 / 12 * 100) - 2%;
-  border: none;
   margin-right:2%;
   @include border-radius(3px);
 
   ul {
-    border: none;
     margin-left: 2%;
 
     li {
