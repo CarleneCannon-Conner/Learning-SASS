@@ -28,7 +28,7 @@ nav.main {
   @import "tablet";
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 850px) {
   @import "desktop";
 }
 
@@ -38,11 +38,11 @@ body {
   margin:0;
 }
 
-#container {
+#content {
   background-color: aliceblue;
+  @include border-radius(3px);
+  margin:2% auto 2% auto;
 }
-
-
 
 h1 {
   font-family: $main-font;

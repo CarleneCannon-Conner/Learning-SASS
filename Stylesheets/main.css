@@ -23,18 +23,24 @@ nav.main a {
 nav.main a:hover {
   color: white; }
 
+#content {
+  width: 89.66667%;
+  padding: 1%; }
+
 .main_image {
   margin: 2px; }
-
-#container {
-  margin: 0 auto 0 auto; }
 
 @media only screen and (min-width: 600px) {
   /* Tablet CSS */
   nav.main {
-    float: none;
-    width: 100%;
-    border: none; }
+    float: left;
+    width: 14.66667%;
+    border: none;
+    margin-right: 2%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; }
     nav.main ul {
       border: none;
       margin-left: 2%; }
@@ -49,22 +55,24 @@ nav.main a:hover {
           font-size: .8em;
           padding: .7em .9em; }
 
-  #container {
-    width: 79.33333%;
+  #content {
+    width: 77.33333%;
     padding: 2%;
-    margin: 2% auto 2% auto;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    border-radius: 3px; }
+    float: left; }
 
   .main_image {
     width: 46%;
     float: right; } }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 850px) {
   /* Desktop CSS */
-  #container {
-    width: 62.66667%; }
+  nav.main {
+    float: none;
+    width: 100%;
+    border: none; }
+
+  #content {
+    width: 62.66667%;
+    float: none; }
 
   .main_image {
     width: 29.33333%; } }
@@ -73,8 +81,13 @@ body {
   background-color: #292c44;
   margin: 0; }
 
-#container {
-  background-color: aliceblue; }
+#content {
+  background-color: aliceblue;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin: 2% auto 2% auto; }
 
 h1 {
   font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }

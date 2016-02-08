@@ -1,8 +1,15 @@
 /* Desktop CSS */
 
-#container {
+nav.main {
+  float: none;
+  width: 100%;
+  border: none;
+}
+
+#content {
   $width: 8 / 12 * 100%;
   width: $width - 4%;
+  float:none;
 }
 
 .main_image {

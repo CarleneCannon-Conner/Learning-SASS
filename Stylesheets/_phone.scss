@@ -1,4 +1,5 @@
 /* Phone CSS */
+
 nav.main {
 
   ul {
@@ -25,10 +26,12 @@ nav.main {
   }
 }
 
-.main_image {
-  margin:2px;
+#content {
+  $width: 11 / 12 * 100%;
+  width: $width - 2%;
+  padding: 1%;
 }
 
-#container {
-  margin: 0 auto 0 auto;
+.main_image {
+  margin:2px;
 }
