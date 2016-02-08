@@ -71,3 +71,14 @@ pre {
   @include border-radius(3px);
   padding-right:1em;
 }
+
+.nav_link_section {
+  font-size: .7em;
+  margin:2px;
+  text-decoration:none;
+}
+
+.nav_link_top {
+  @extend .nav_link_section;
+  font-weight: 600;
+}

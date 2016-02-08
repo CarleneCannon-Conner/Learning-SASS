@@ -18,8 +18,8 @@
                 <li><a href="#subject4">Variables</a></li>
                 <li><a href="#subject5">Nesting</a></li>
                 <li><a href="#subject6">Mixins</a></li>
-                <li><a href="#subject7">Maths Operators</a></li>
-                <li><a href="#subject8">Extend or Inheritance</a></li>
+                <li><a href="#subject7">Operators</a></li>
+                <li><a href="#subject8">Extends</a></li>
             </ul>
             <div class ="clear"></div>
         </nav>
@@ -46,6 +46,8 @@
                     I was then able to install SASS from the Command Line with:
                     <code>gem install sass</code>
                 </p>
+                <a href="#subject1" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
             </div>
 
             <div id="subject2">
@@ -63,6 +65,8 @@
                     However, once SASS has been installed, there is a handy feature in WebStorm that automatically
                     detects .scss files and asks if you would like them watched.
                 </p>
+                <a href="#subject2" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
             </div>
 
             <div id="subject3">
@@ -80,6 +84,8 @@
         @import "tablet";
                     </code>
                 </pre>
+                <a href="#subject3" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
             </div>
 
             <div id="subject4">
@@ -94,6 +100,8 @@
     $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
                     </code>
                 </pre>
+                <a href="#subject4" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
             </div>
 
             <div id="subject5">
@@ -146,6 +154,8 @@
     }
                     </code>
                 </pre>
+                <a href="#subject5" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
             </div>
 
             <div id="subject6">
@@ -174,6 +184,8 @@
     }
                     </code>
                 </pre>
+                <a href="#subject6" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
             </div>
 
             <div id="subject7">
@@ -190,8 +202,36 @@
                     </code>
                 </pre>
             </div>
+            <a href="#subject7" class="nav_link_section">Top of Section</a>
+            <a href="#" class="nav_link_top">Top of Page</a>
 
+            <div id="subject8">
+                <h3>Extend or Inheritance</h3>
+                <p>
+                   If you wish two or more elements to share some of the same properties, you can use extend. In my example
+                    .nav_link_top will contain all the CSS rules currently defined in .nav_link_section, by using @extend.
+                    I can then customise .nav_link_top further, for instance with a greater font weight.
+                </p>
+                    <pre>
+                        <code>
+        .nav_link_section {
+            font-size: .7em;
+            margin:2px;
+            text-decoration:none;
+        }
+
+        .nav_link_top {
+            @extend .nav_link_section;
+            font-weight: 600;
+        }
+                        </code>
+                    </pre>
+                </div>
+                <a href="#subject8" class="nav_link_section">Top of Section</a>
+                <a href="#" class="nav_link_top">Top of Page</a>
+            </div>
         </div>
+    </div>
 
         <footer>Carlene Conner</footer>
     </div>

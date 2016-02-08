@@ -117,4 +117,12 @@ pre {
   border-radius: 3px;
   padding-right: 1em; }
 
+.nav_link_section, .nav_link_top {
+  font-size: .7em;
+  margin: 2px;
+  text-decoration: none; }
+
+.nav_link_top {
+  font-weight: 600; }
+
 /*# sourceMappingURL=main.css.map */
