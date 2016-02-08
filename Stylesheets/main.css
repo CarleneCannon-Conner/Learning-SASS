@@ -16,7 +16,7 @@ body {
 nav.main {
   background: #151515; }
   nav.main ul li a {
-    color: #9ca7be; }
+    color: #c3cee5; }
   nav.main ul li a:hover {
     color: #F0E704; }
 
@@ -54,7 +54,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
-  background-color: aliceblue;
+  background-color: #c3cee5;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -62,7 +62,7 @@ pre {
   padding-right: 1em; }
 
 a:hover {
-  color: #9ca7be; }
+  color: #c3cee5; }
 
 .nav_link_section, .nav_link_top {
   font-size: 0.8em;

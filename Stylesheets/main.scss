@@ -2,7 +2,7 @@
 $main-font: "Raleway", sans-serif;
 $body-colour: #292c44;
 $nav-background-colour: #151515;
-$alt1-colour: #9ca7be;
+$alt1-colour: #c3cee5;
 $alt2-colour: #F0E704;
 $small-font: .8em;
 
@@ -71,7 +71,7 @@ pre {
   overflow: auto;
   word-wrap: normal;
   white-space: pre;
-  background-color: aliceblue;
+  background-color: $alt1-colour;
   @include border-radius(3px);
   padding-right: 1em;
 }
