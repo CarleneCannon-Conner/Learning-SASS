@@ -4,6 +4,71 @@ nav.main {
   background: #151515; }
   nav.main ul li a {
     color: #9ca7be; }
+  nav.main ul li a:hover {
+    color: #F0E704; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #292c44;
+  margin: 0; }
+
+#content {
+  background-color: aliceblue;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin: 2% auto 2% auto; }
+
+h1 {
+  font-family: "Raleway", sans-serif; }
+
+.main_image {
+  padding: 1%;
+  border: 1.5px solid #9ca7be;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  margin: 10px 2px 2px 2px; }
+
+.image_caption {
+  font-size: 0.8em; }
+
+#flower_img {
+  width: 100%; }
+
+.clear {
+  clear: both; }
+
+.section {
+  margin-top: 100px; }
+
+p {
+  text-align: justify;
+  text-justify: inter-word; }
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding-right: 1em; }
+
+a:hover {
+  color: #0072BC; }
+
+.nav_link_section, .nav_link_top {
+  font-size: .7em;
+  margin: 2px;
+  text-decoration: none; }
+
+.nav_link_top {
+  font-weight: 600; }
 
 /* Import partials: different rules depending on screen size */
 /* Phone CSS */
@@ -20,15 +85,10 @@ nav.main a {
   padding: .4em;
   text-decoration: none;
   font-weight: 600; }
-nav.main a:hover {
-  color: white; }
 
 #content {
   width: 89.66667%;
   padding: 1%; }
-
-.main_image {
-  margin: 2px; }
 
 @media only screen and (min-width: 600px) {
   /* Tablet CSS */
@@ -62,7 +122,8 @@ nav.main a:hover {
 
   .main_image {
     width: 46%;
-    float: right; } }
+    float: right;
+    margin-left: 10px; } }
 @media only screen and (min-width: 850px) {
   /* Desktop CSS */
   nav.main {
@@ -71,58 +132,10 @@ nav.main a:hover {
     border: none; }
 
   #content {
-    width: 62.66667%;
+    width: 54.33333%;
     float: none; }
 
   .main_image {
     width: 29.33333%; } }
-body {
-  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif";
-  background-color: #292c44;
-  margin: 0; }
-
-#content {
-  background-color: aliceblue;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  margin: 2% auto 2% auto; }
-
-h1 {
-  font-family: "Helvetica Neue, Helvetica, Arial, sans-serif"; }
-
-.main_image {
-  padding: 1%;
-  border: 1.5px solid grey;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px; }
-
-#flower_img {
-  width: 100%; }
-
-.clear {
-  clear: both; }
-
-pre {
-  overflow: auto;
-  word-wrap: normal;
-  white-space: pre;
-  background-color: white;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  padding-right: 1em; }
-
-.nav_link_section, .nav_link_top {
-  font-size: .7em;
-  margin: 2px;
-  text-decoration: none; }
-
-.nav_link_top {
-  font-weight: 600; }
 
 /*# sourceMappingURL=main.css.map */

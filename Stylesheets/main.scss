@@ -1,5 +1,5 @@
 /* Variables */
-$main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
+$main-font: "Raleway", sans-serif;
 $main-colour: #292c44;
 $accent-colour: #ff5349;
 $alt1-colour: #151515;
@@ -19,17 +19,9 @@ nav.main {
   ul li a {
     color: $alt2-colour;
   }
-}
-
-/* Import partials: different rules depending on screen size */
-@import "phone";
-
-@media only screen and (min-width: 600px) {
-  @import "tablet";
-}
-
-@media only screen and (min-width: 850px) {
-  @import "desktop";
+  ul li a:hover {
+    color:#F0E704;
+  }
 }
 
 body {
@@ -46,13 +38,18 @@ body {
 
 h1 {
   font-family: $main-font;
-
 }
+
 
 .main_image {
   padding:1%;
-  border:1.5px solid grey;
+  border:1.5px solid $alt2-colour;
   @include border-radius(3px);
+  margin:10px 2px 2px 2px;
+}
+
+.image_caption {
+  font-size:0.8em;
 }
 
 #flower_img {
@@ -61,6 +58,14 @@ h1 {
 
 .clear {
   clear:both;
+}
+.section {
+  margin-top:100px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 pre {
@@ -72,6 +77,10 @@ pre {
   padding-right:1em;
 }
 
+a:hover {
+  color:#0072BC;
+}
+
 .nav_link_section {
   font-size: .7em;
   margin:2px;
@@ -81,4 +90,15 @@ pre {
 .nav_link_top {
   @extend .nav_link_section;
   font-weight: 600;
+}
+
+/* Import partials: different rules depending on screen size */
+@import "phone";
+
+@media only screen and (min-width: 600px) {
+  @import "tablet";
+}
+
+@media only screen and (min-width: 850px) {
+  @import "desktop";
 }

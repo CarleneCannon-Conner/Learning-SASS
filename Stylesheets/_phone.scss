@@ -20,18 +20,10 @@ nav.main {
     text-decoration: none;
     font-weight: 600;
   }
-
-  a:hover {
-    color:white;
-  }
 }
 
 #content {
   $width: 11 / 12 * 100%;
   width: $width - 2%;
   padding: 1%;
-}
-
-.main_image {
-  margin:2px;
 }
