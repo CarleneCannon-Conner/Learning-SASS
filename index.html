@@ -76,9 +76,8 @@
                 </p>
                 <pre>
                     <code>
-@media only screen and (min-width: 600px) {
-    @import "tablet";
-}
+    @media only screen and (min-width: 600px) {
+        @import "tablet";
                     </code>
                 </pre>
             </div>
@@ -92,7 +91,7 @@
                 </p>
                 <pre>
                     <code>
-$main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
+    $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
                     </code>
                 </pre>
             </div>
@@ -104,23 +103,23 @@ $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
                 </p>
                 <pre>
                     <code>
-nav {
-    background: $alt1-colour;
+    nav {
+        background: $alt1-colour;
 
-    ul li {
-        list-style-type: none;
-        width: 50%;
-        float: left;
-    }
+        ul li {
+            list-style-type: none;
+            width: 50%;
+            float: left;
+        }
 
-    a {
-        display:block;
-        background:$alt2-colour;
+        a {
+            display:block;
+            background:$alt2-colour;
+        }
+        a:hover {
+            color:white;
+        }
     }
-    a:hover {
-        color:white;
-    }
-}
                     </code>
                 </pre>
                 <p>
@@ -128,23 +127,23 @@ nav {
                 </p>
                 <pre>
                     <code>
-nav {
-    background: #18cdca;
-}
+    nav {
+        background: #18cdca;
+    }
 
-nav ul li {
-    list-style-type: none;
-    width: 50%;
-    float: left;
-}
+    nav ul li {
+        list-style-type: none;
+        width: 50%;
+        float: left;
+    }
 
-nav a {
-    display: block;
-    background: #4f80e1;
-}
-nav a:hover {
-    color: white;
-}
+    nav a {
+        display: block;
+        background: #4f80e1;
+    }
+    nav a:hover {
+        color: white;
+    }
                     </code>
                 </pre>
             </div>
@@ -156,12 +155,12 @@ nav a:hover {
                 </p>
                 <pre>
                     <code>
-@mixin border-radius ($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    -ms-border-radius: $radius;
-    border-radius: $radius;
-}
+    @mixin border-radius ($radius) {
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        border-radius: $radius;
+    }
                     </code>
                 </pre>
                 <p>
@@ -169,10 +168,10 @@ nav a:hover {
                 </p>
                 <pre>
                     <code>
-.main_image {
-    border:1.5px solid grey;
-    @include border-radius(10px);
-}
+    .main_image {
+        border:1.5px solid grey;
+        @include border-radius(10px);
+    }
                     </code>
                 </pre>
             </div>

@@ -3,7 +3,7 @@ $main-font: "Helvetica Neue, Helvetica, Arial, sans-serif";
 $main-colour: #292c44;
 $accent-colour: #ff5349;
 $alt1-colour: #151515;
-$alt2-colour: #b7c6e1;
+$alt2-colour: #9ca7be;
 $image_width: "100px";
 
 /* Mixins */
@@ -59,7 +59,15 @@ h1 {
   width:100%;
 }
 
-
 .clear {
   clear:both;
+}
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+  background-color: white;
+  @include border-radius(3px);
+  padding-right:1em;
 }

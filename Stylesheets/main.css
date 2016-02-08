@@ -3,7 +3,7 @@
 nav.main {
   background: #151515; }
   nav.main ul li a {
-    color: #b7c6e1; }
+    color: #9ca7be; }
 
 /* Import partials: different rules depending on screen size */
 /* Phone CSS */
@@ -105,5 +105,16 @@ h1 {
 
 .clear {
   clear: both; }
+
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre;
+  background-color: white;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  padding-right: 1em; }
 
 /*# sourceMappingURL=main.css.map */
